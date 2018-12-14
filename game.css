@@ -1,0 +1,531 @@
+body{
+	margin: 0;
+	background-color: #262626;
+	color: #efefef;
+    font-size: 20px;
+	font-family: 'Acme', sans-serif;
+}
+
+h1.logo{
+	height: 80px;
+	font-family: 'Freckle Face', cursive;
+	font-size: 70px;
+	background-color: black;
+	color: orange;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px;
+}
+
+#container{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sidepanel{
+	float: left;
+	width: 180px;
+	height: 255px;
+	background-color: #bf7d03;
+	padding: 10px;
+	border: 2px solid black;
+	font-size: 18px;
+}
+
+.sidepanelHighlighted{
+	border: 2px solid red;
+	-webkit-box-shadow: inset 0px 0px 10px 5px rgba(255,0,0,1);
+	-moz-box-shadow: inset 0px 0px 10px 5px rgba(255,0,0,1);
+	box-shadow: inset 0px 0px 10px 5px rgba(255,0,0,1);
+}
+
+main{
+	margin-top: 0px;
+	width: 940px;
+	padding: 30px;
+	text-align: justify;
+}
+
+footer{
+	height: 30px;
+	background-color: black;
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+}
+
+main a{
+	color: orange;
+	text-decoration: none;
+}
+
+.nick{
+	float: left;
+	text-align: center;
+	width: 160px;
+}
+
+.center{
+	float: left;
+	height: 275px;
+	width: 495px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.description
+{
+	float: left;
+	width: 305px;
+	text-align: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.sideHighlighted{
+	background-color: red;
+	-webkit-box-shadow: 0px 0px 10px 10px rgba(255,0,0,1);
+	-moz-box-shadow: 0px 0px 10px 10px rgba(255,0,0,1);
+	box-shadow: 0px 0px 10px 10px rgba(255,0,0,1);
+}
+
+.pokemonsmall{
+	float: left;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+	background-color: dimgray;
+	margin: 10px;
+	border-radius: 10px;
+	border: 2px solid #ff0;
+}
+
+.pokemonsmall:hover{
+	outline: none;
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	-moz-box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	cursor: pointer;
+}
+
+.pokemonsmallActive{
+	float: left;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+	background-color: black;
+	margin: 10px;
+	border-radius: 10px;
+	border: 2px solid #ff0;
+}
+
+.pokeballsmall{
+	float: left;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+	background-image: url(img/pokeball.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+	background-color: dimgray;
+	margin: 10px;
+	border-radius: 10px;
+	border: 2px solid #ff0;
+}
+
+.pokemon{
+	font-size: 19px;
+	height: 150px;
+	background-color: dimgray;
+	border: 2px solid #ff0;
+	border-radius: 15px;
+	/*margin-left: 10px;
+	margin-right: 10px;*/
+}
+
+.pokemonlarge
+{
+	float: left;
+	height: 150px;
+	width: 150px;
+	background-color: gray;
+	border-radius: 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+}
+
+.pokeballlarge
+{
+	background-image: url(img/pokeball.jpg);
+	float: left;
+	height: 150px;
+	width: 150px;
+	background-color: dimgray;
+	border-radius: 15px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
+}
+
+.card{
+	font-size: 14px;
+	float: left;
+	height: 110px;
+	width: 85px;
+	background-color: dimgray;
+	text-align: left;
+	padding: 5px;
+
+	border-radius: 10px;
+	border: 2px solid #ff0;
+	
+	position: relative;
+	transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	-moz-box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	cursor: pointer;
+	
+	transform: matrix3d(1.2, 0, 0.00, 0, -0.00, 1.2, 0.00, 0, 0, 0, 1, 0, 0, -20, 0 , 1);
+}
+
+.cardback{
+	font-family: 'Freckle Face', cursive;
+	color: orange;
+	float: left;
+	height: 110px;
+	width: 85px;
+	background-color: black;
+	text-align: center;
+	padding: 5px;
+
+	border-radius: 10px;
+	border: 2px solid #ff0;
+	line-height: 100px;
+}
+
+.cardsLeft{
+	font-family: 'Freckle Face', cursive;
+	color: orange;
+	float: left;
+	height: 110px;
+	width: 85px;
+	background-color: black;
+	text-align: center;
+	padding: 5px;
+
+	border-radius: 10px;
+	border: 2px solid #ff0;
+	font-size: 20px;
+}
+
+.attack{
+	height: 100%;
+	width: 100%;
+}
+
+.discard{
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+}
+
+.discard:hover{
+	opacity: 1;
+}
+
+.error{
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#menu{
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+
+.menutile{
+	float: left;
+	text-align: center;
+	width: 160px;
+}
+
+.menutile a{
+	color: white;
+	text-decoration: none;
+}
+
+.playerid{
+	font-size: 5px;
+	color: black;
+	float: left;
+	text-align: center;
+	width: 160px;
+}
+
+#menuright{
+	height: 540px;
+	width: 160px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#bottomright{
+	position: relative;
+}
+
+#buttons{
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+}
+
+.button{
+	float: left;
+	text-align: center;
+	width: 75px;
+	height: 30px;
+	padding: 5px;
+	background-color: dimgray;
+	margin: 5px;
+	border-radius: 10px;
+	border: 2px solid #ff0;
+	color: white;
+	font-weight: bold;
+}
+
+.buttonInactive{
+	float: left;
+	text-align: center;
+	width: 75px;
+	height: 30px;
+	padding: 5px;
+	background-color: dimgray;
+	margin: 5px;
+	border-radius: 10px;
+	border: 2px solid #ff0;
+	color: white;
+	font-weight: bold;
+}
+
+.button:hover{
+	outline: none;
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	-moz-box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	box-shadow: 0px 0px 5px 5px rgba(255,215,0,1);
+	cursor: pointer;
+}
+
+
+.red{
+	color: red;
+}
+
+.blue{
+	color: blue;
+}
+
+.green{
+	color: limeGreen;
+}
+
+.orangeRed{
+	color: orangeRed;
+}
+
+.powderBlue{
+	color: powderBlue;
+}
+
+.yellow{
+	color: yellow;
+}
+
+.chocolate{
+	color: chocolate;
+}
+
+.saddleBrown{
+	color: saddleBrown;
+}
+
+.grayscale{
+	filter: grayscale(100%);
+}
+
+.type{
+	float: left;
+	border-radius: 5px;
+}
+
+.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+	display: none;
+}
+
+div.ui-dialog {
+    background-color: #bf7d03;// !important;
+	border-radius: 10px;
+	border: 2px solid #ff0;
+	padding: 10px;
+	font-weight: bold;
+	
+	-webkit-box-shadow: 0px 0px 10px 10px rgba(255,0,0,1);
+	-moz-box-shadow: 0px 0px 10px 10px rgba(255,0,0,1);
+	box-shadow: 0px 0px 10px 10px rgba(255,0,0,1);
+} 
+
+.ui-button{
+	padding: 10px;
+	width: 100px;
+	background-color: dimgray;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+.ui-button:hover{
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(255,0,0,1);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(255,0,0,1);
+	box-shadow: 0px 0px 5px 2px rgba(255,0,0,1);
+}
+
+.shake{
+	animation-name: shake;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes shake{
+	0%, 100% {
+		transform: translate3d(0, 0, 0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translate3d(-10px, 0, 0);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translate3d(10px, 0, 0);
+	}
+} 
+
+.pulse{
+	animation-name: pulse;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes pulse{
+	0%, 100% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+}
+
+.fadeInDown{
+	animation-name: fadeInDown;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes fadeInDown{
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+} 
+
+.fadeInUp{
+	animation-name: fadeInUp;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes fadeInUp{
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeOutDown{
+	animation-name: fadeOutDown;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes fadeOutDown{
+	0% {
+		opacity: 1;
+		transform: none;
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}
+
+.fadeOutUp{
+	animation-name: fadeOutUp;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes fadeOutUp{
+	0% {
+		opacity: 1;
+		transform: none;
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+}
+
+.cardPlayed{
+  animation: animationFrames linear 0.4s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames{
+  0% {
+    transform:  translate(-0px,0px)  rotate(0deg) ;
+  }
+  50% {
+    transform:  translate(0px,-100px)  rotate(180deg) ;
+  }
+  100% {
+    transform:  translate(0px,-200px)  rotate(360deg) ;
+  }
+}
