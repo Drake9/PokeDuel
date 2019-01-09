@@ -31,7 +31,7 @@
 	
 	<div id="container">
 		<div class="sidepanel">
-			<form action="zaloguj.php" method="post">
+			<form action="login.php" method="post">
 				Login: <br/><input type="text" name="login" /> <br/>
 				Password: <br/><input type="password" name="haslo" /> <br/><br/>
 				<input type="submit" value="Zaloguj się" />
